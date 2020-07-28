@@ -61,7 +61,7 @@ bow <- function(s,n)
   s <- gsub("\n", "", s) # to remove the \n if you put as a string a FASTA sequence.
   k_u <- get_kmer(s,n)
   k_all <- get_kmer_all(s,n)
-  c <- kcount(k_all,1)
+  c <- kcount(k_all,1) # k count is a function from "kmer" library
   m <- matrix(c, nrow=length(c), ncol=1)
   kmer <- c(k_u)
   Bow = data.frame(kmer,m)
