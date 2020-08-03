@@ -4,7 +4,7 @@ R package for bag of word representation of string (especially DNA/proteins)
 title: "BowString"
 ---
 All the library that you need: 
-```
+```{r}
 library(BowString)
 library(kmer)
 library(ggplot2)
